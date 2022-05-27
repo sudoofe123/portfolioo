@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
- 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   
  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
     <title>portfolio</title>
@@ -18,31 +22,40 @@
 </head>
 
 <body>
+
     <div id="particles-js">  </div>
-    <header class="heading">
-        <nav class="navbar sticky">
-            <ul class="nav__links">
-                <div class="logo">
-                    <h4>__SUD__</h4>
-                </div>
-             
-                <li>
-                    <a class="nav__link" href="#section--1">About</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--2">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--3">Skills</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--4">Contact</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--5">Resume</a>
-                </li>
+        <header>
+          <nav class="navbar">
+            <div class="logo">
+              <h4>__SUD__</h4>
+            </div>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#section--1" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--2" class="nav-link">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--3" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--4" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--5" class="nav-link">Resume</a>
+              </li>
             </ul>
-        </nav>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        
+
+
+
        
         <section class="content">
             
@@ -50,7 +63,7 @@
                 <h1>Sudhanshu kumar</h1>
                 <h1>And I'm a Web developer</h1>
                     <div class="strong" id="strong">
-                        <strong>Frontend developer  wordpress Expert</strong>
+                        <strong>Frontend developer  </strong>
                     </div>
                     <button class="btn">Hire me</button>
                     <div class="load">
@@ -59,8 +72,19 @@
                         
                     </section>
                 </div> 
-            </header>
-      
+         
+              </header>
+
+              <div class="sticky-social">
+                <ul class="social">
+                  <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+                    <li class="pin"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="vim"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
    
  <section id="section--1" class="section">
         <div class="head">
@@ -83,7 +107,7 @@
         </div>
     </section>
 
-    <section id="section--2">
+    <section id="section--2" class="section--2">
         <h1>These are some of my projects</h1>
        
         <div class="projects">
@@ -267,13 +291,16 @@
     </section>
 
     <footer>
-        <span>"Created by " <a href="#">Sudhanshu</a> <span>all rights reserved</span></span>
+        <span>"Created by <a href="https://google.com"> Sudhanshu </a> <span>all rights reserved"</span></span>
     </footer>  
    
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
 
 
 
