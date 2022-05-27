@@ -401,7 +401,7 @@ input:hover {
 @media (max-width: 868px) {
   .contact {
     align-items: center;
-    border: 2px solid pink;
+    
     padding: none;
   }
   .fields {
@@ -421,6 +421,7 @@ input:hover {
     flex-direction: column;
 
     justify-content: center;
+    padding:1rem;
   }
 }
 
