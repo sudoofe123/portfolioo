@@ -1,10 +1,10 @@
 const section = document.querySelector("section");
 
-document.querySelector(".nav__links").addEventListener("click", function (e) {
+document.querySelector(".nav-item").addEventListener("click", function (e) {
   e.preventDefault();
   console.log(e.target);
 
-  if (e.target.classList.contains("nav__link")) {
+  if (e.target.classList.contains("nav-link")) {
     console.log("link");
 
     const id = e.target.getAttribute("href");
@@ -15,6 +15,22 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
     });
   }
 });
+
+const hamburger = document.querySelector(".hamburger");
+
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
 
 const loading = document.querySelector("#loading");
 loading.addEventListener("click", function (e) {
@@ -29,7 +45,6 @@ loading.addEventListener("click", function (e) {
     });
   }
 });
-
 
 particlesJS("particles-js", {
   particles: {
@@ -103,3 +118,4 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
