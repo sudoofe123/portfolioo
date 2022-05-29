@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,40 +10,57 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
- 
-    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
     <title>portfolio</title>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+   
 
 </head>
 
 <body>
+
     <div id="particles-js">  </div>
-    <header class="heading">
-        <nav class="navbar sticky">
-            <ul class="nav__links">
-                <div class="logo">
-                    <h4>__SUD__</h4>
-                </div>
-             
-                <li>
-                    <a class="nav__link" href="#section--1">About</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--2">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--3">Skills</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--4">Contact</a>
-                </li>
-                <li class="nav__link">
-                    <a class="nav__link" href="#section--5">Resume</a>
-                </li>
+        <header>
+          <nav class="navbar">
+           
+            <div class="logo">
+              
+              <img src="unocss.svg" alt="">
+              
+            </div>
+            
+            
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#section--1" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--2" class="nav-link">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--3" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--4" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section--5" class="nav-link">Resume</a>
+              </li>
             </ul>
-        </nav>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        
+
+
+
        
         <section class="content">
             
@@ -50,7 +68,7 @@
                 <h1>Sudhanshu kumar</h1>
                 <h1>And I'm a Web developer</h1>
                     <div class="strong" id="strong">
-                        <strong>Frontend developer  wordpress Expert</strong>
+                        <strong>Frontend developer  </strong>
                     </div>
                     <button class="btn">Hire me</button>
                     <div class="load">
@@ -59,8 +77,19 @@
                         
                     </section>
                 </div> 
-            </header>
-      
+         
+              </header>
+
+              <div class="sticky-social">
+                <ul class="social">
+                  <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+                    <li class="pin"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="vim"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
    
  <section id="section--1" class="section">
         <div class="head">
@@ -70,123 +99,106 @@
        
         <div class="imgandabout">
             <div class="column-left">
-                <img src="profile.jpg" alt="" id="image" />
+                <img src="undraw_firmware_re_fgdy.svg" alt="" id="image" />
             </div>
             <div class="column-right">
-                <h2>I am Sudhanshu</h2>
+                
                 <p>
-                    I am a MCA student from chandigarh university.I love making things from web tech . Feel free to have a look at my projects below and connect with me! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, error. Accusamus nam, natus asperiores
-                    cumque dolorem beatae ducimus! Officiis repudiandae doloremque labore possimus quas quod nihil voluptatem, nisi consectetur assumenda.
+             
+
+                    Hello, My name is Sudhanshu Kumar and I'm from India currently in my 2nd
+                    semester of college pursuing my masters from chandigarh university.
+                    <br />
+                    Apart from college, I'm into Front End Web Development. I create
+                    interactive and responsive websites and web apps in order me grow and
+                    learn a ton of new stuff as a developer. My current tech stack in HTML,
+                    CSS, JavaScript and React.i am seeking a role in challenging position where i can enhance my skills and grow professionally . I love learning new things and proactively seeking new challenges.
                 </p>
                 <button class="btn">Resume</button>
             </div>
         </div>
     </section>
 
-    <section id="section--2">
+    <section id="section--2" class="section--2">
         <h1>These are some of my projects</h1>
-       
-        <div class="projects">
-          <div class="project">
-            
-            <a
-              href="https://sudoofe123.github.io/movie-seat-booking-/"
-              target="_blank"
-              class="project project-tile"
-            >
-          
-              <img src="Screenshot (676).png" class="image" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Movie ticket booking
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-  
-  
+ 
+       <div class="projects">
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (773).png" alt="">
+           </div>
+           <h3>Modern Ui-Ux website</h3>
+           <p>This is a modern ui-ux website made using react functional componenets and perflty placed media query for responsive to all the devices.</p>
+           <div class="btn-container">
+             <button class="button"><a href="https://github.com/sudoofe123/modern-ui-ux-website"  target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://scintillating-meringue-a9b17f.netlify.app/"  target="_blank"> Demo</a></button>
+           </div>
+         </div>
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (774).png" alt="">
+           </div>
+           <h3>Crypto price tracker </h3>
+           <p>Crypto price tracker is a project related to cryptocurrencies where we are fetching data from coingecko api and showing real time stats and data.</p>
+           <div class="btn-container">
+             <button class="button"><a href="https://github.com/sudoofe123/Crypto-price-checker" target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://eloquent-belekoy-2b7656.netlify.app/" target="_blank"> Demo</a></button>
+           </div>
+         </div>
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (775).png" alt="">
+           </div>
+           <h3>Meal finder</h3>
+           <p>When you open the project, you can see the home page of the meal searching page on your browser where you can search for any food you want.</p>
+           <div class="btn-container">
+             <button class="button"><a href=" https://github.com/sudoofe123/Meal--finder" target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://sudoofe123.github.io/Meal--finder/" target="_blank"> Demo</a></button>
+           </div>
+         </div>
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (676).png" alt="">
+           </div>
+           <h3>Movie ticket booking</h3>
+           <p>This is a simple movie ticket booking app in whch user can select and diselect seats and book tickets and data is stored on local storage . </p>
+           <div class="btn-container">
+             <button class="button"><a href="https://github.com/sudoofe123/movie-seat-booking-" target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://sudoofe123.github.io/movie-seat-booking-/" target="_blank"> Demo</a></button>
+           </div>
+         </div>
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (776).png" alt="">
+           </div>
+           <h3>Freckle</h3>
+           <p>Freckle is a fully responsive landing page built on Html5 and css3 and it hosted on github pages.</p>
+           <div class="btn-container">
+             <button class="button"><a href="https://github.com/sudoofe123/landing-page" target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://github.com/sudoofe123/landing-page" target="_blank"> Demo</a></button>
+           </div>
+         </div>
+         <div class="project">
+           <div class="image">
+             <img src="Screenshot (675).png" alt="">
+           </div>
+           <h3>  Github profile finder</h3>
+           <p>In 'Github Profile Finder', anyone can search GitHub users by their GitHub username and they will get user's profile information along with links to latest 4 repositories.</p>
+           <div class="btn-container">
+             <button class="button"><a href="https://github.com/sudoofe123/github-profile-finder" target="_blank">Source Code</a> </button>
+             <button class="button"><a href="https://sudoofe123.github.io/github-profile-finder/" target="_blank"> Demo</a></button>
+           </div>
+         </div>
         
-          <div class="project">
-            <a
-              href="https://sudoofe123.github.io/dad-jokes/"
-              target="_blank"
-              class="project project-tile"
-            >
-              <img src="Screenshot (677).png" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Random jokes generator
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://sudoofe123.github.io/exchange-rate-calculator/"
-              target="_blank"
-              class="project project-tile"
-            >
-              <img src="Screenshot (674).png" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Currency value calculator
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://jolly-minsky-f1094b.netlify.app/"
-              target="_blank"
-              class="project project-tile"
-            >
-              <img src="Screenshot (673).png" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Simple page
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://sudoofe123.github.io/github-profile-finder/"
-              target="_blank"
-              class="project project-tile"
-            >
-              <img src="Screenshot (675).png" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Github profile finder
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://sudoofe123.github.io/landing-page/"
-              target="_blank"
-              class="project project-tile"
-            >
-              <img src="Screenshot (672).png" alt="" />
-  
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Landing page
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-          </div>
-        </div>
         
-  </button>
-  </div>
-  
+        
+         
+         
+       </div>
+
+
+
+      
        
       </section>
    
@@ -267,13 +279,20 @@
     </section>
 
     <footer>
-        <span>"Created by " <a href="#">Sudhanshu</a> <span>all rights reserved</span></span>
+        <span>"Created by <a href="https://google.com"> Sudhanshu </a> <span>all rights reserved"</span></span>
     </footer>  
    
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+    function(){
+        console.log('particles.json loaded...')
+    })
+</script>
     <script src="script.js"></script>
 </body>
 
 </html>
-
 
 
