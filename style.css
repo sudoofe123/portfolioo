@@ -122,6 +122,16 @@ h4 {
 .content {
   padding: 4rem;
 }
+
+.content h1 {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+
+  background: linear-gradient(to right, #00f260, #0575e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.3rem;
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -161,17 +171,8 @@ h4 {
     padding: 2rem;
   }
   .content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
-}
-.content h1 {
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-
-  background: linear-gradient(to right, #00f260, #0575e6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 4.3rem;
 }
 
 h1 {
@@ -458,10 +459,10 @@ input:hover {
     flex-direction: column;
 
     justify-content: center;
-    padding: 1rem;
+    padding: 3rem;
   }
   .png-container img {
-    width: 330px;
+    width: 300px;
     height: 205px;
     padding-left: 0;
   }
