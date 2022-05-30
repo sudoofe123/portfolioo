@@ -26,9 +26,9 @@
 
 .load a {
   position: absolute;
-  right: 4rem;
+  right: 5rem;
   font-size: 1rem;
-  top: 90vh;
+  bottom: 12vh;
   color: #fff;
 }
 body {
@@ -164,70 +164,28 @@ h4 {
     font-size: 3rem;
   }
 }
+.content h1 {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+
+  background: linear-gradient(to right, #00f260, #0575e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.3rem;
+}
 
 h1 {
   color: #fff;
   margin: 0;
   font-size: 3.5rem;
   line-height: 1.4;
+
   background: linear-gradient(to right, #11998e, #38ef7d);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #262626;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
 
-  .nav-item {
-   
-    padding: 1rem 0;
-
-    border-bottom: 1px solid #3c3838;
-    width: 100%;
-  }
-  .nav-menu.active {
-    left: 0;
-  }
-  .content {
-    margin-top: 1rem;
-    padding: 1rem 1.6rem;
-  }
-  .content h1 {
-    font-size: 2.8rem;
-  }
-  .section--1 h1,
-  .section--2 h1,
-  .section--3 h1,
-  .section--4 h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-
-*/
 .btn {
   padding: 6px 15px;
 
@@ -262,7 +220,9 @@ h1 {
   font-size: 1.4rem;
   padding: 1rem 4rem 0 0;
   text-align: justify;
-  color: #fff;
+
+  color: #999696;
+  opacity: 0.8;
   margin-bottom: 0.6rem;
   width: 80%;
   line-height: 1.7;
@@ -273,7 +233,7 @@ h1 {
     font-size: 1.2rem;
     padding: 1rem 4rem 0 0;
     text-align: justify;
-    color: #fff;
+
     margin-bottom: 0.6rem;
     width: 100%;
     line-height: 1.7;
@@ -328,8 +288,10 @@ img {
 }
 .column-right p {
   text-align: justify;
-  line-height: 1.5;
-  font-size: 1.1rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+
+  color: #999696;
 }
 
 .head {
@@ -452,6 +414,7 @@ textarea {
 
 footer {
   background-color: #222;
+
   text-align: center;
   padding: 20px;
 }
@@ -498,7 +461,7 @@ input:hover {
     padding: 1rem;
   }
   .png-container img {
-    width: 310px;
+    width: 330px;
     height: 205px;
     padding-left: 0;
   }
