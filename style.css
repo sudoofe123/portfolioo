@@ -10,7 +10,8 @@
   width: 100%;
   height: 100%;
   height: 100vh;
-  background-color: #111;
+  background-color: #222;
+
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +45,9 @@ html {
 
 #section--1 {
   background: #1d1d1d;
+  /* background: #333; */
+  background-color: #3c3838;
+  background-color: #111;
 }
 
 #section--3 {
@@ -52,7 +56,7 @@ html {
 }
 
 #section--4 {
-  background-color: #111;
+  background-color: rgb(21, 20, 20);
   border-bottom: 1px solid aqua;
 }
 
@@ -153,11 +157,11 @@ h4 {
     left: 0;
   }
   .content {
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 2rem;
   }
   .content h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -170,6 +174,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/*
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -196,7 +201,7 @@ h1 {
   }
 
   .nav-item {
-    /* margin: 16px 0; */
+   
     padding: 1rem 0;
 
     border-bottom: 1px solid #3c3838;
@@ -206,8 +211,8 @@ h1 {
     left: 0;
   }
   .content {
-    margin-top: 4rem;
-    padding: 2rem 3rem;
+    margin-top: 1rem;
+    padding: 1rem 1.6rem;
   }
   .content h1 {
     font-size: 2.8rem;
@@ -221,8 +226,8 @@ h1 {
   }
 }
 
-/* ////////////////////////////////////section1 */
 
+*/
 .btn {
   padding: 6px 15px;
 
@@ -233,7 +238,7 @@ h1 {
   border: none;
 
   background: transparent;
-  border: 2px solid aqua;
+  border: 1px solid aqua;
 
   color: #fff;
   margin-top: 20px;
@@ -248,11 +253,35 @@ h1 {
 }
 
 #section--1 {
-  background-color: #222;
+  background-color: #1d1d1d;
   /* height: 100vh; */
   border-bottom: 1px solid aqua;
 }
 
+.content p {
+  font-size: 1.4rem;
+  padding: 1rem 4rem 0 0;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  width: 80%;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .content p {
+    font-size: 1.2rem;
+    padding: 1rem 4rem 0 0;
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 0.6rem;
+    width: 100%;
+    line-height: 1.7;
+  }
+  .content .strong {
+    margin-bottom: 1.5rem;
+  }
+}
 /* //////////////section--2////////////// */
 
 .imgandabout {
@@ -335,7 +364,8 @@ img {
 }
 
 strong {
-  color: rgb(248, 12, 217);
+  color: rgb(143, 139, 139);
+  opacity: 0.6;
   font-size: 1rem;
 }
 
@@ -445,7 +475,7 @@ input:hover {
 @media (max-width: 868px) {
   .contact {
     align-items: center;
-    border: 2px solid pink;
+
     padding: none;
   }
   .fields {
@@ -466,6 +496,11 @@ input:hover {
 
     justify-content: center;
     padding: 1rem;
+  }
+  .png-container img {
+    width: 310px;
+    height: 205px;
+    padding-left: 0;
   }
 }
 
@@ -599,6 +634,7 @@ section1 {
   transition: 0.2s ease all;
   transform: scale(0.98);
   cursor: pointer;
+  box-shadow: 0px 1px 2px 1px rgb(136, 221, 221);
 }
 
 @media (max-width: 868px) {
@@ -612,7 +648,7 @@ section1 {
     grid-template-columns: 1fr;
   }
   #section--2 {
-    padding: 1rem 2.5rem 2rem 2.5rem;
+    padding: 1rem 0.5rem;
   }
   #section--2 h1 {
     font-size: 2.2rem;
@@ -629,60 +665,4 @@ section1 {
   background-color: #111;
   display: flex;
   margin-right: 10px;
-}
-/* ///////////////////////////////////////////////// */
-
-section1 {
-  position: relative;
-  height: 600px;
-  background: #f1f5f8;
-  padding: 10px 0px;
-  width: 100%;
-}
-.section1 h2 {
-  text-align: center;
-  font-size: 40px;
-}
-.section1 p {
-  text-align: center;
-  padding: 0px 70px;
-  color: grey;
-}
-.sticky-social {
-  position: fixed;
-  top: 200px;
-  right: 0px;
-  padding: 0px;
-  margin: 0px;
-  z-index: 11111;
-}
-.social {
-  list-style: none;
-}
-.social li {
-  padding: 10px 10px;
-  font-size: 25px;
-
-  transition: all 0.8s ease-in-out;
-}
-.social li:hover {
-  margin-right: -30px;
-  box-shadow: 2px 5px 10px rgb(54, 51, 51);
-}
-.social li:hover .fa {
-  margin-left: 20px;
-}
-.fa {
-  color: aqua;
-
-  transition: all 0.8s ease-in-out;
-}
-
-.fb,
-.twitter,
-.insta,
-.pin,
-.vim {
-  background-color: #222;
-  border-bottom: 1px solid rgb(69, 64, 64);
 }
