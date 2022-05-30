@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link
@@ -17,6 +18,14 @@
   />
   
  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+ <!-- <script
+      src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <title>portfolio</title>
    
 
@@ -26,11 +35,11 @@
 
     <div id="particles-js">  </div>
         <header>
-          <nav class="navbar">
+          <nav class="navbar" >
            
             <div class="logo">
               
-              <img src="unocss.svg" alt="">
+              <img src="undraw_profile_details_re_ch9r.svg" alt="">
               
             
             
@@ -51,9 +60,7 @@
               <li class="nav-item">
                 <a href="#section--4" class="nav-link">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a href="#section--5" class="nav-link">Resume</a>
-              </li>
+              
             </ul>
             <div class="hamburger">
               <span class="bar"></span>
@@ -66,16 +73,16 @@
 
 
        
-        <section class="content">
+        <section class="content" data-aos="slide-up">
          
-            <h1>Hi,</h1>
-            <h1> I'm Sudhanshu</h1>
+            <h1 >Hi,</h1>
+            <h1 > I'm Sudhanshu</h1>
          
-                <p>A Computer science engineering Student and a Front End Enthusiast passionate to building websites and webapps.</p>
+                <p >A Computer science engineering Student and a Front End Enthusiast passionate to building websites and webapps.</p>
                     <div class="strong" id="strong">
-                        <strong>Frontend developer  </strong>
+                        <strong >Frontend developer  </strong>
                     </div>
-                    <a href="#section--2"><button class="btn" >View my Work</button></a>
+                    <a href="#section--2" ><button class="btn" >View my Work</button></a>
                     <div class="load">
                         <a href="#section--1" id="loading" class="loading">load more<i class="fa-solid fa-arrow-down-long" ></i></a>
             
@@ -86,28 +93,28 @@
 
               <div class="sticky-social">
                 <ul class="social">
-                  <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <!-- <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
                       <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
-                    <li class="pin"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li class="vim"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="pin"><a href="https://github.com/sudoofe123"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="vim"><a href="https://www.linkedin.com/in/sudhanshu-s-6039b5197/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
               </div>
    
- <section id="section--1" class="section">
-        <div class="head">
+ <section id="section--1" class="section"  >
+        <div class="head" >
             <h1>About Me</h1>
             <strong>__who i am__</strong>
         </div>
        
-        <div class="imgandabout">
+        <div class="imgandabout" >
             <div class="column-left">
-                <img src="undraw_firmware_re_fgdy.svg" alt="" id="image" />
+                <img src="undraw_firmware_re_fgdy.svg" alt="" id="image" data-aos="fade-left" >
             </div>
-            <div class="column-right">
+            <div class="column-right" data-aos="fade-right">
                 
-                <p>
+                <p >
              
 
                     Hello, My name is Sudhanshu Kumar and I'm from India currently in my 2nd
@@ -118,18 +125,18 @@
                     learn a ton of new stuff as a developer. My current tech stack in HTML,
                     CSS, JavaScript and React.i am seeking a role in challenging position where i can enhance my skills and grow professionally . I love learning new things and proactively seeking new challenges.
                 </p>
-                <button class="btn">Resume</button>
+              <a href="https://drive.google.com/file/d/1vDUQvBZBAhjqoKpQF59Ws3Z0lwkqtdlZ/view?usp=drivesdk" target="_blank"><button class="btn">Download Cv</button></a> 
             </div>
         </div>
     </section>
 
     <section id="section--2" class="section--2">
-        <h1>These are some of my projects</h1>
+        <h1 >These are some of my projects</h1>
  
-       <div class="projects">
-         <div class="project">
+       <div class="projects" data-aos="fade-right">
+         <div class="project" data-aos="slide-left">
            <div class="image">
-             <img src="Screenshot (773).png" alt="">
+             <img src="Screenshot (773).png" alt="" >
            </div>
            <h3>Modern Ui-Ux website</h3>
            <p>This is a modern ui-ux website made using react functional componenets and perflty placed media query for responsive to all the devices.</p>
@@ -149,7 +156,7 @@
              <button class="button"><a href="https://eloquent-belekoy-2b7656.netlify.app/" target="_blank"> Demo</a></button>
            </div>
          </div>
-         <div class="project">
+         <div class="project"  data-aos="slide-right">
            <div class="image">
              <img src="Screenshot (775).png" alt="">
            </div>
@@ -160,7 +167,7 @@
              <button class="button"><a href="https://sudoofe123.github.io/Meal--finder/" target="_blank"> Demo</a></button>
            </div>
          </div>
-         <div class="project">
+         <div class="project" data-aos="slide-left">
            <div class="image">
              <img src="Screenshot (676).png" alt="">
            </div>
@@ -171,7 +178,7 @@
              <button class="button"><a href="https://sudoofe123.github.io/movie-seat-booking-/" target="_blank"> Demo</a></button>
            </div>
          </div>
-         <div class="project">
+         <div class="project" >
            <div class="image">
              <img src="Screenshot (776).png" alt="">
            </div>
@@ -182,7 +189,7 @@
              <button class="button"><a href="https://github.com/sudoofe123/landing-page" target="_blank"> Demo</a></button>
            </div>
          </div>
-         <div class="project">
+         <div class="project" data-aos="slide-right">
            <div class="image">
              <img src="Screenshot (675).png" alt="">
            </div>
@@ -192,18 +199,9 @@
              <button class="button"><a href="https://github.com/sudoofe123/github-profile-finder" target="_blank">Source Code</a> </button>
              <button class="button"><a href="https://sudoofe123.github.io/github-profile-finder/" target="_blank"> Demo</a></button>
            </div>
-         </div>
-        
-        
-        
+          </div>
          
-         
-       </div>
-
-
-
-      
-       
+       </div>   
       </section>
    
   
@@ -212,8 +210,8 @@
             <h1>My skills</h1>
             <strong>__what I know__</strong>
         </div>
-        <div class="skill-container">
-            <div class="skill">
+        <div class="skill-container" data-aos="slide-up" >
+            <div class="skill" >
                 <img src="html.png" alt="" class="language" />
                 <p>html</p>
             </div>
@@ -293,13 +291,13 @@
 
       </div>
 
-      <div class="contact">
-          <div class="png-container">
+      <div class="contact"  >
+          <div class="png-container" data-aos="fade-right">
               <img src="971.jpg" alt="" id="png" />
           </div>
           <div class="form">
-              <form action="">
-                  <div class="fields">
+              <form action="" data-aos="fade-left">
+                  <div class="fields" >
                       <div class="field name" id="name">
                           <input type="text" placeholder="Name" />
                       </div>
@@ -331,6 +329,12 @@
   function(){
       console.log('particles.json loaded...')
   })
+</script>
+<script>
+  AOS.init({
+    duration:1000,
+    offSet:300
+  });
 </script>
   <script src="script.js"></script>
 </body>
