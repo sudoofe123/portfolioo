@@ -371,40 +371,36 @@ strong {
 .contact {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
-  padding: 4rem 0;
-}
 
-.contact .png-container .form {
-  width: 80%;
+  padding: 3rem 0;
 }
 
 .png-container img {
-  width: 340px;
-  height: 275px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-
-.fields {
+.png-container {
+  width: 500px;
+  height: 500px;
+  /* border: 2px solid wheat; */
+}
+.form {
+  padding-top: 5rem;
   display: flex;
-  margin-bottom: 15px;
+  flex-direction: column;
+  color: #fff;
 }
 
 .field input {
-  padding: 8px;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
   outline: none;
   border: none;
 
   font-size: 12px;
   background: #222;
-}
-
-#subject input {
   width: 100%;
-  background: #222;
-}
-
-#subject {
-  margin-bottom: 15px;
 }
 
 textarea {
@@ -412,10 +408,9 @@ textarea {
   width: 100%;
   height: 120px;
   outline: none;
-  font-size: 17px;
+  font-size: 1rem;
   transition: all 0.3s ease;
 
-  margin-bottom: 5px;
   background: #222;
 }
 
@@ -439,7 +434,8 @@ footer span a {
 textarea:hover,
 input:hover {
   border-bottom: 2px solid aqua;
-  transition: 0.4s;
+  transition: 0.4s ease-in;
+  cursor: pointer;
 }
 
 @media (max-width: 868px) {
@@ -447,16 +443,6 @@ input:hover {
     align-items: center;
 
     padding: none;
-  }
-  .fields {
-    margin-top: 2rem;
-  }
-  input,
-  textarea {
-    width: 80%;
-  }
-  #subject {
-    width: 80%;
   }
 }
 
@@ -467,10 +453,10 @@ input:hover {
     justify-content: center;
     padding: 3rem;
   }
-  .png-container img {
+  .png-container {
     width: 300px;
-    height: 205px;
-    padding-left: 0;
+    height: 230px;
+    object-fit: cover;
   }
 }
 
