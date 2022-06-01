@@ -311,25 +311,41 @@ img {
 .skill-container {
   display: flex;
   flex-flow: row wrap;
-  padding: 0px 306px;
-  margin: 4rem 0px;
+  /* padding: 0px 306px; */
+  /* margin: 4rem 0px; */
   justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  place-content: center;
+  /* gap: 1rem; */
+  padding: 1rem 15rem;
 }
 
 .skill {
-  border: 1px solid rgb(70, 66, 66);
-  padding: 20px 20px;
+  /* border: 1px solid rgb(70, 66, 66); */
+  /* padding: 20px 20px; */
+
+  padding: 3rem;
+  padding-top: 2rem;
   margin: 10px;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   background-color: #222;
   border-radius: 6px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 1px solid rgb(63, 63, 63);
 }
 
 .skill p {
   text-align: center;
   text-transform: uppercase;
   color: rgb(252, 246, 246);
+  color: #9d9797;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 strong {
@@ -339,30 +355,67 @@ strong {
 }
 
 .language {
-  width: 50%;
+  width: 90%;
 }
 
 .skill:hover {
   background-color: #38ef7d;
-  background-color: aqua;
+
   transform: scale(1.04);
-  transition: 0.2s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+.skill:hover p {
   color: #111;
 }
 
-.skill p:hover {
-  color: black;
+.skill:nth-of-type(1):hover {
+  background: linear-gradient(to right, #24c6dc, #514a9d);
+}
+.skill:nth-of-type(2):hover {
+  background: linear-gradient(to right, #d72a17, #f8ba35);
+}
+.skill:nth-of-type(3):hover {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+.skill:nth-of-type(4):hover {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+.skill:nth-of-type(5):hover {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+.skill:nth-of-type(6):hover {
+  background: linear-gradient(to right, #57489d, #4286f4);
+}
+.skill:nth-of-type(7):hover {
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+.skill:nth-of-type(8):hover {
+  background: linear-gradient(to right, #333333, #dd1818);
+}
+.skill:nth-of-type(9):hover {
+  background: linear-gradient(to left, #e5d35d, #d29172);
+}
+.skill:nth-of-type(10):hover {
+  background: linear-gradient(to right, #c0392b, #8e44ad);
 }
 
 @media (max-width: 868px) {
   .skill-container {
-    padding: 0 5rem;
+    /* padding: 1.5 5rem; */
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
   }
 }
 @media (max-width: 700px) {
   .skill-container {
-    padding: 0 3rem;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
