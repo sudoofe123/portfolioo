@@ -1,4 +1,9 @@
 const section = document.querySelector("section");
+const preloader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+  preloader.style.display = "none";
+});
 
 document.querySelector(".nav-item").addEventListener("click", function (e) {
   e.preventDefault();
