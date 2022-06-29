@@ -123,3 +123,9 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+const toggleSwitch = document.querySelector('input[type="checkbox"]');
+const nav = document.getElementById("nav");
+const toggleIcon = document.getElementById("toggle-icon");
+
+const textBox = document.getElementById("text-box");

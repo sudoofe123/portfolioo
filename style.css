@@ -90,6 +90,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   gap: 60px;
 }
 
@@ -692,11 +693,11 @@ section1 {
   width: 100%;
   position: fixed;
   z-index: 999;
-  background-size: 25%;
+  background-size: 10%;
 }
 
 @media (max-width: 800px) {
   #preloader {
-    background-size: 50%;
+    background-size: 30%;
   }
 }
